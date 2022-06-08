@@ -9,7 +9,7 @@ package _002_structurePattern._007_iterator_pattern.normal
 class ConcreteHandler1 : Handler() {
     override fun handleRequest(request: AbstractRequest) {
         if (request.name == "ConcreteHandler1") {
-            System.out.print("ConcreteHandler1 handle")
+            print("ConcreteHandler1 handle")
         } else {
             successor.handleRequest(request)
         }
